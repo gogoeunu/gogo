@@ -1,0 +1,11 @@
+   services:
+     - type: web
+       name: architectural-critique-backend
+       env: node
+       buildCommand: npm install
+       startCommand: node server.js
+       envVars:
+         - key: HUGGINGFACE_API_KEY
+           value: your_huggingface_key
+         - key: OPENAI_API_KEY
+           value: your_openai_key
