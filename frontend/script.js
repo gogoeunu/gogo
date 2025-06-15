@@ -44,7 +44,7 @@ async function analyzeImage() {
 
     try {
         console.log('Sending image to backend...');
-        const response = await fetch('http://localhost:3001/analyze', {
+        const response = await fetch('https://gogo-oubo.onrender.com/analyze', {
             method: 'POST',
             body: formData
         });
